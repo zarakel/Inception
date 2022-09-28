@@ -10,7 +10,7 @@ RUN		apk add php7 php7-fpm php7-opcache php7-mysqli \
 		php7-ctype php7-dom php7-phar php7-gd php7-zlib
 
 RUN		rm -f /etc/php7/php-fpm.d/www.conf
-COPY		conf/wordpress.conf /etc/php7/php-fpm.d/www.conf
+COPY		conf/php.conf /etc/php7/php-fpm.d/www.conf
 
 RUN		mkdir 			-p /var/www/html
 RUN		adduser 		-u 82 -D -S -G www-data www-data
