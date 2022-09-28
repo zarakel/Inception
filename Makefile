@@ -1,5 +1,4 @@
 F&P		= -f srcs/docker-compose.yml -p inception
-#ENV_FILE	= srcs/.env
 
 all: 
 		mkdir -p /home/jbuan/data/wordpress
