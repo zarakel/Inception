@@ -12,5 +12,5 @@ mysql -e "GRANT ALL PRIVILEGES ON \`${DB_DATABASE}\`.* TO \`${DB_USER}\`@'%' IDE
 mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '${DB_ROOT_PW}';"
 mysql -e "FLUSH PRIVILEGES;"
 
-pkill mysqld
+killall mysqld
 /usr/bin/mysqld --user=root --datadir=/var/lib/mysql
